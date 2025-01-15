@@ -19,8 +19,9 @@ requirements:
   host:
     - pip
     - setuptools
-    - python >=3.9
+    - python {{ python_min }}
   run:
+    - python >={{ python_min }}
     - geopandas >=0.14.4
     - lxml
     - h5netcdf
@@ -30,8 +31,8 @@ requirements:
     - rioxarray >=0.10.0
     - rtree
     - cloudpathlib >=0.12.1
-    - sertit >=1.42.2
-    - eoreader >=0.21.3
+    - sertit >=1.44.5
+    - eoreader >=0.21.8
     - validators
     - matplotlib-base
     - methodtools
@@ -48,6 +49,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
