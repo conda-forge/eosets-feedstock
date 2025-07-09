@@ -40,6 +40,7 @@ requirements:
     - pyresample
     - zarr
     - dicttoxml
+    - earthengine-api !=1.5.23
 
 
 test:
