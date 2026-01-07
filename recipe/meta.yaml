@@ -1,5 +1,5 @@
 {% set name = "eosets" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/eosets-{{ version }}.tar.gz
-  sha256: ffc362d56a3a2f98557a5feabbf78e2f983bfadd99ecdbcb701969ce65f6788c
+  sha256: a88586687b92b383f95c936fb4cb52e939df1ee544deb532047d4bcfafdaf9e3
 
 build:
   number: 0
@@ -23,26 +23,15 @@ requirements:
   run:
     - python >={{ python_min }}
     - geopandas >=0.14.4
-    - lxml
-    - h5netcdf
     - rasterio >=1.3.10
     - xarray >=2024.06.0
-    - rioxarray >=0.10.0
-    - rtree
-    - cloudpathlib >=0.12.1
-    - sertit >=1.44.6
-    - eoreader >=0.21.9
-    - validators
+    - rioxarray >=0.15.0
+    - cloudpathlib-s3 >=0.15.0
+    - sertit >=1.50.2
+    - eoreader >=0.23.0
     - matplotlib-base
-    - methodtools
     - pystac
-    - spyndex >=0.3.0
-    - pyresample
-    - zarr
-    - dicttoxml
-    - earthengine-api !=1.5.23
-
-
+    
 test:
   imports:
     - eosets
