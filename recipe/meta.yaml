@@ -1,5 +1,5 @@
 {% set name = "eosets" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/eosets-{{ version }}.tar.gz
-  sha256: a88586687b92b383f95c936fb4cb52e939df1ee544deb532047d4bcfafdaf9e3
+  sha256: 97016cc75990c71c7ee710df679cafa4e4bac75ce4e155e6ee5a51a43c628ccb
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - eoreader >=0.23.0
     - matplotlib-base
     - pystac
-    
+
 test:
   imports:
     - eosets
