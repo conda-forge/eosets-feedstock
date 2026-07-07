@@ -1,5 +1,5 @@
 {% set name = "eosets" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/eosets-{{ version }}.tar.gz
-  sha256: 75c5acc59b5306dc9d5a5287ccc4e98eb0cc06730476ea1af33dcff16b61f7e2
+  sha256: 4c9b8779005d0553b34a063c8bfbab4338b3f00a5330053f5c37a3b8eb9de3fc
 
 build:
   number: 0
